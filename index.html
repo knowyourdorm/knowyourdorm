@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent Your Dream Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+ <link rel="icon" type="image/png" href="img/house.png">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+
+
+  <div class="top-hero">
+    <div class="logo-section">
+      <img src="img/house.png" alt="Home Icon">
+      <div class="logo-text">KNOW<br>YOUR<br>DORM</div>
+    </div>
+
+    <div class="contact-heading"><a href="#footer" class="contact-heading">CONTACT US NOW!</a></div>
+
+    <div class="image-trio">
+      <img src="img/mayao1.jpg" alt="Dorm 1">
+      <img src="img/mmg3.jpg" alt="Dorm 2">
+      <img src="img/neda1.jpg" alt="Dorm 3">
+    </div>
+
+    <div class="tagline-box">
+      <h2>YOUR HOME</h2>
+      <h1>AWAY FROM HOME</h1>
+      <button class="get-btn"><a href="#listings" class="get-btn">GET IT NOW</a></button>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-image-content">
+      <a href="https://ggugu.my.canva.site/studio-type-apartment" class="view-btn">View More</a>
+      <p>https://ggugu.my.canva.site/studio-type-apartment</p>
+    </div>
+  </div>
+
+  <div class="section-title" id="listings">Recent Listings</div>
+  <section class="card-slider">
+    <button class="nav-btn nav-left" onclick="scrollCards(-1)">&#8249;</button>
+    <div class="card-container" id="cardList"></div>
+    <button class="nav-btn nav-right" onclick="scrollCards(1)">&#8250;</button>
+  </section>
+
+<div id="homeModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div class="modal-header-image" id="modalHeaderImage"></div>
+    <div class="modal-text" id="modalText"></div>
+    <div class="modal-images" id="modalImages"></div>
+  </div>
+</div>
+
+<footer id="footer">
+  <h2><i class="fas fa-address-book"></i> Contact Us</h2>
+  <p><i class="fas fa-envelope"></i> knowyourdorm@email.com</p>
+  <p><i class="fas fa-phone-alt"></i> 09123456789</p>
+  <p><i class="fas fa-map-marker-alt"></i> Ibabang Dupay, Lucena City</p>
+  <div style="margin-top:20px;">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+    <a href="mailto:knowyourdorm@email.com"><i class="fas fa-envelope fa-lg"></i></a>
+    <a href="tel:09123456789"><i class="fas fa-phone fa-lg"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
